@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Homepage</h1>
+      <h4>Login to have access to your personal area or create a new account!</h4>
+      <br>
+      <form action="" method="post">
+        <input type="submit" name="choice_btn" value="Login">
+        <input type="submit" name="choice_btn" value="Signup">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
